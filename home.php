@@ -20,70 +20,16 @@ if (isset($_GET['url'])) {
 
     //Master File
     
-    if ($_GET['url'] == "item_master") {
-        include_once './item_master.php';
+    if ($_GET['url'] == "employer") {
+        include_once './employer.php';
     }
-    
-     if ($_GET['url'] == "vehicle_Mileage_master_file") {
-        include_once './vehicle_mileage_master.php';
+    if ($_GET['url'] == "category_master") {
+        include_once './category.php';
     }
-
-     if ($_GET['url'] == "vehicle_master_file") {
-        include_once './vehicle_master.php';
+    if ($_GET['url'] == "sub_category_master") {
+        include_once './sub_category.php';
     }
 
-      if ($_GET['url'] == "astu") {
-        include_once './asset_user_master.php';
-    }
-    
-
-      if ($_GET['url'] == "astc") {
-        include_once './asset_category_master.php';
-    }
-    
-
-      if ($_GET['url'] == "adv") {
-        include_once './advance_allocation.php';
-    }
-	
-	  if ($_GET['url'] == "pv") {
-        include_once './payment_voucher.php';
-    }
-    
-    
-    
-    
-   
-    // Add
-   
-
-
-    
-if ($_GET['url'] == "vehicle_master_file"){
-    include_once './vehicle_master_file.php';
-}
-if ($_GET['url'] == "vehicle_Mileage_master_file"){
-    include_once './vehicle_mileage_master.php';
-}
-if ($_GET['url'] == "fuel_Service_Invoice_AP"){
-    include_once './fuel_Service_Invoice_AP.php';
-}
-if ($_GET['url'] == "fixed_Asset_Category_master_file"){
-    include_once './asset_category_master.php';
-}
-if ($_GET['url'] == "department_master_file"){
-    include_once './department_master_file.php';
-}
-if ($_GET['url'] == "fixed_Asset_User_master_file"){
-    include_once './asset_user_master.php';
-}
-if ($_GET['url'] == "fixed_Asset_master_file"){
-    include_once './fixed_Asset_master_file.php';
-}
-if ($_GET['url'] == "fixed_Asset_Registry"){
-    include_once './fixed_Asset_Registry.php';
-}
-  
 
 
     if ($_GET['url'] == "new_user") {
@@ -95,13 +41,15 @@ if ($_GET['url'] == "fixed_Asset_Registry"){
     if ($_GET['url'] == "change_password") {
         include_once './change_password.php';
     }
-
     
-
-
+    
+    
     if ($_GET['url'] == "create") {
         include_once './create.php';
     }
+    
+    
+    
 } else {
 
     include_once './fpage.php';
@@ -159,15 +107,9 @@ include './autocomple_gl.php';
 <script>
 
     $(function () {
-
-
-
-
         $(document).ready(function () {
             $('#approveCombo').multiselect();
         });
-
-
     });
 
 </script>

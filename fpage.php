@@ -37,11 +37,11 @@
             
             echo "<div class='row'>
                 <h1>&nbsp;&nbsp;" . $row["grp"] . "</h1>
-                    <div class='col-md-3'>
+                    <div class='col-md-4'>
                         <div class='small-box " . $colors[$colorCount] . "'>
                             <div class='inner'>
                                 <h3>" . $row["docname"] . "</h3>
-                                <h4>" . $row["docname"] . "</h4>
+                                <h4>" . $row["grp"] . "</h4>
                             </div>
                         <div class='icon'>
                             <i class='ion ion-bag'></i>
@@ -51,11 +51,11 @@
                 </div>";
             $grp = $row['grp'];
         }else{
-             echo "<div class='col-md-3'>
+             echo "<div class='col-md-4'>
                         <div class='small-box " . $colors[$colorCount] . "'>
                             <div class='inner'>
                                 <h3>" . $row["docname"] . "</h3>
-                                <h4>" . $row["docname"] . "</h4>
+                                <h4>" . $row["grp"] . "</h4>
                             </div>
                         <div class='icon'>
                             <i class='ion ion-bag'></i>

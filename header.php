@@ -68,6 +68,7 @@ function get_title($url) {
         exit();
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -93,7 +94,6 @@ function get_title($url) {
         <!-- Date Picker -->
         <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <style>
             .form-group {
@@ -107,7 +107,7 @@ function get_title($url) {
 
             <header class="main-header">
                 <!-- Logo -->
-                <a style="font-size: 12px;" href="home.php" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels --> <span class="logo-mini"><b></b></span> <!-- logo for regular state and mobile devices --> <span class="logo-lg"><b>COMMON</b></span> COMMON</a>
+                <a style="font-size: 12px;" href="home.php" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels --> <span class="logo-mini"><b></b></span> <!-- logo for regular state and mobile devices --> <span class="logo-lg"><b>KFH</b></span> KFH</a>
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top" role="navigation">
                     <!-- Sidebar toggle button-->

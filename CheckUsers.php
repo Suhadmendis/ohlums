@@ -100,28 +100,14 @@ if ($_GET["Command"] == "save_inv") {
 
         date_default_timezone_set('Asia/Colombo');
 
-        require 'email/PHPMailerAutoload.php';
-        $mail = new PHPMailer;
-        $mail->isSMTP();
-
-        $mail->Host = 'mail.infodatasl.com';
-        $mail->Port = 587;
-        $mail->SMTPSecure = 'tls';
-        $mail->SMTPAuth = true;
-        $mail->Username = "autoemail@infodatasl.com";
-        $mail->Password = "autoemail@123";
-
+      
 
         $sql = "select * from user_mast where user_name='" . $_GET["user_name"] . "'";
         $result = $conn->query($sql);
 //        echo $sql;
         if ($row = $result->fetch()) {
 
-            $uemail = $row["U_email"];
-            $remail = $row["R_email"];
-
-            $mail->setFrom('autoemail@infodatasl.com', 'Kot System');
-            $mail->addAddress($uemail, 'hhh');
+          
         }
 
         $table = "";
@@ -156,23 +142,14 @@ if ($_GET["Command"] == "save_inv") {
 
                     </tr></table>";
 
-        $table .= "<table style = 'width: 660px;' class = 'table1'><tr>
-                    <th style = 'width: 20px;' class = 'left'></th>
-                    <th style = 'width: 200px;' class = 'left'>Login Url :</th>
-                    <a href = 'http://infodatasl.com/UnichelaBiyagama/index.php'>Login Here</a>
-
-                    </tr></table>";
+     
 
 
-        $mail->Body = '"' . $table . '"';
-        $mail->Subject = 'Kot Order';
-        $mail->isHTML(true);
+      
 
-        if (!$mail->send()) {
-            echo "Mailer Error: " . $mail->ErrorInfo;
-        } else {
+       
             echo "Saved";
-        }
+       
     }
 }
 

@@ -34,6 +34,8 @@ if (isset($_COOKIE[$cookie_name])) {
                 background-color: #3f484f;
             }
             #login-form{
+                margin-top: 200px;
+                padding: 50px;
                 background-color: #e7535f;
                 border: 0px;
             }
@@ -55,32 +57,40 @@ if (isset($_COOKIE[$cookie_name])) {
    
 
         <div class="container">
-            <div id="login-form" class="form-signin form-group mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                <div>
-                    <!--<img style="align-content: center" class="img-responsive" src="img/Mas_Holdings_Logo.png">-->
-                    <div class="form-group">
-                        <h1 id="topic"><center>AMT TRANSPORT SERVICE</center></h1>
+            <div class="row">
+                <div id="" class="col-md-4">
+                   
+                </div>
+                 <div id="login-form" class="col-md-4">
+                    <div>
+                        <!--<img style="align-content: center" class="img-responsive" src="img/Mas_Holdings_Logo.png">-->
+                        <div class="form-group">
+                            <h1 id="topic"><center>Kithsiri Furnishing House</center></h1>
+                        </div>
                     </div>
+                    <!--<h3><center>MAS HOLDINGS</center></h3>-->
+                    <div class="form-group"></div>
+
+                    <strong id="lab">Username:</strong>
+
+                    <input class="form-control"  name="UserName" type="text" id="txtUserName" onkeypress="keyset('txtPassword', event)"  />
+
+
+
+                    <strong id="lab">Password:</strong>
+
+                    <input class="form-control" name="Password" type="password" id="txtPassword" onkeypress="keyset('lbtn', event)"/>
+                    <div id="txterror" class="login_error">
+
+                    </div>
+
+
+                    <button class="btn btn-primary" id="lbtn"  name="lbtn" onclick="IsValiedData();">Sign in</button>
+
                 </div>
-                <!--<h3><center>MAS HOLDINGS</center></h3>-->
-                <div class="form-group"></div>
-
-                <strong id="lab">Username:</strong>
-
-                <input class="form-control"  name="UserName" type="text" id="txtUserName" onkeypress="keyset('txtPassword', event)"  />
-
-
-
-                <strong id="lab">Password:</strong>
-
-                <input class="form-control" name="Password" type="password" id="txtPassword" onkeypress="keyset('lbtn', event)"/>
-                <div id="txterror" class="login_error">
-
+                 <div id="" class="col-md-4">
+                  
                 </div>
-
-
-                <button class="btn btn-primary" id="lbtn"  name="lbtn" onclick="IsValiedData();">Sign in</button>
-
             </div>
         </div>
 
