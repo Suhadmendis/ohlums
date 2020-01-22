@@ -147,7 +147,7 @@ function get_dtt() {
             table = table + '</tr>';
 
         }
-       
+         
 
         table = table + '</tbody>';
         table = table + '</table>';
@@ -177,45 +177,19 @@ function save_inv() {
 
 
     var obj = {
-                  "squadName": "Super hero squad",
-                  "homeTown": "Metro City",
-                  "formed": 2016,
-                  "secretBase": "Super tower",
-                  "active": true,
-                  "members": [
+                  "Main": "SAVE",
+                  "Sub": "",
+                  "Flag": "",
+                  "Num": 6,
+                  "Status": true,
+                  "Message": "Something",
+                  "Col": 
                     {
-                      "name": "Molecule Man",
+                      "name": document.getElementById("Category_ID").value,
                       "age": 29,
-                      "secretIdentity": "Dan Jukes",
-                      "powers": [
-                        "Radiation resistance",
-                        "Turning tiny",
-                        "Radiation blast"
-                      ]
-                    },
-                    {
-                      "name": "Madame Uppercut",
-                      "age": 39,
-                      "secretIdentity": "Jane Wilson",
-                      "powers": [
-                        "Million tonne punch",
-                        "Damage resistance",
-                        "Superhuman reflexes"
-                      ]
-                    },
-                    {
-                      "name": "Eternal Flame",
-                      "age": 1000000,
-                      "secretIdentity": "Unknown",
-                      "powers": [
-                        "Immortality",
-                        "Heat Immunity",
-                        "Inferno",
-                        "Teleportation",
-                        "Interdimensional travel"
-                      ]
+                      "secretIdentity": "Dan Jukes"
                     }
-                  ]
+                  
                 };
     var obj = JSON.stringify(obj);
 

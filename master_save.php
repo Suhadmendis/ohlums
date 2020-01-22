@@ -6,15 +6,13 @@ require_once ("connection_sql.php");
 include "crud_operation.php";
 
 
+$main = array($_POST['main']);
+$obj  = json_decode($main[0], true);
 
 // $obj = print_r($_POST);
 
-$marks = array($_POST['main']);
-
-
-
-$obj = json_encode($marks);
+// echo $main;
+print_r($obj);
  
-echo $obj;
 
 ?>
