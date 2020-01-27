@@ -2,16 +2,16 @@
 include './CheckCookie.php';
 require_once ('connection_sql.php');
 $cookie_name = "user";
-if (isset($_COOKIE[$cookie_name])) {
-    $mo = chk_cookie($_COOKIE[$cookie_name]);
-    if ($mo != "ok") {
-        header('Location: ' . "index.php");
-        exit();
-    }
-} else {
-    header('Location: ' . "index.php");
-    exit();
-}
+// if (isset($_COOKIE[$cookie_name])) {
+//     $mo = chk_cookie($_COOKIE[$cookie_name]);
+//     if ($mo != "ok") {
+//         header('Location: ' . "index.php");
+//         exit();
+//     }
+// } else {
+//     header('Location: ' . "index.php");
+//     exit();
+// }
 $mtype = "";
 include "header.php";
 
@@ -42,6 +42,23 @@ if (isset($_GET['url'])) {
         include_once './change_password.php';
     }
     
+    
+        if($_GET['url'] == 'medical_inquiry'){
+        include_once './medical_inquiry.php';
+    }
+    if($_GET['url'] == 'medical_issues'){
+        include_once './medical_issues.php';
+    }
+    if($_GET['url'] == 'medical_register'){
+        include_once './medical_register.php';
+    }
+    if($_GET['url'] == 'medical_results_entry'){
+        include_once './medical_results_entry.php';
+    }
+    if($_GET['url'] == 'test_results_entry'){
+        include_once './test_results_entry.php';
+    }
+
     
     
     if ($_GET['url'] == "create") {
